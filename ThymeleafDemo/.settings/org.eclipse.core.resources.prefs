@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/myclass/config/WebMvcConfig.java=UTF-8
+encoding//src/main/java/com/myclass/controller/RoleController.java=UTF-8
+encoding//src/main/java/com/myclass/entity/Role.java=UTF-8
+encoding//src/main/webapp/WEB-INF/templates/fragments/sidebar.html=UTF-8
+encoding//src/main/webapp/WEB-INF/templates/role/add.html=UTF-8

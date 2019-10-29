@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="accountRepository" class="com.myclass.repository.AccountRepositoryImpl">
+		
+	</bean>
+	
+	<bean id="accountService" class="com.myclass.service.AccountServiceImpl">
+		<constructor-arg ref="accountRepository"></constructor-arg>
+	</bean>
+	
+	<bean id="account1" class="com.myclass.entity.Account">
+		<property name="id" value="1"></property>
+		<property name="name" value="A"></property>
+		<property name="money" value="100"></property>
+	</bean>
+	
+		
+	<bean id="account2" class="com.myclass.entity.Account">
+		<property name="id" value="2"></property>
+		<property name="name" value="B"></property>
+		<property name="money" value="200"></property>
+	</bean> -->
+	
+	
+
+</beans>

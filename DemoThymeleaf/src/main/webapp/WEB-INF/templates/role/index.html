@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+     	<th>STT</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr th:if=${roles.empty}>
+    		<td colspan="5">không có bảng ghi</td>
+    	</tr>
+      <tr th:each="role:${roles}">
+      	<td th:text="${roleStat.index+1}"></td>
+        <td th:text="${role.id}">1</td>
+        <td th:text="${role.name}">ROLE_ADMIN</td>
+        <td th:text="${role.description}">Quan tri</td>
+        <td>
+        	<a class="btn btn-primary" th:href="@{/role/edit/{id}(id=${role.id})}">EditById</a>
+        	<!-- <a class="btn btn-danger" th:href="@{/role/edit/{role}(role=${role})}">EditByRoleObject</a> -->
+        	<a class="btn btn-success" th:href="@{/role/delete/{id}(id=${role.id})}">Delete</a>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+  <a th:href="@{/role/add}" class="btn btn-primary">Add</a>
+</div>
+
+</body>
+</html>

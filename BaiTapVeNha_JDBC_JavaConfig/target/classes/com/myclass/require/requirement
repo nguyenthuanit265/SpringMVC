@@ -1,0 +1,8 @@
+Tạo POJO bean Student gồm các thông tin: id, email, fullname, address,
+phone.
+_ Xây dựng lớp AccountRepository và lớp AccountService để quản l{ danh
+sách các sinh viên.
+_ Thực hiện các chức năng: in danh sách sinh viên, thêm, sửa, xóa, tìm
+kiếm.
+_ Cấu trúc dự án theo mô hình phân lớp như đã học.
+_ Áp dụng Dependency vào dự án

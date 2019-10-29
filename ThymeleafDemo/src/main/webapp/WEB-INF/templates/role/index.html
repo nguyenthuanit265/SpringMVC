@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorator="layout/default">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách quyền</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+  <!--   <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href='./css/style.css'> -->
+</head>
+
+<body>
+	
+   <div layout:fragment="content">
+   		<h3 class="mb-3">Danh sách quyền</h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <a th:href="@{/role/add}" class="btn btn-primary">Thêm mới</a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover mt-3">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên Quyền</th>
+                            <th>Mô Tả</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ROLE_ADMIN</td>
+                            <td>Quản trị hệ thống</td>
+                            <td>
+                                <a href="role-edit.html" class="btn btn-sm btn-info">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-danger">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ROLE_TEACHER</td>
+                            <td>Giảng viên</td>
+                            <td>
+                                <a href="role-edit.html" class="btn btn-sm btn-info">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-danger">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ROLE_STUDENT</td>
+                            <td>Học viên viên</td>
+                            <td>
+                                <a href="role-edit.html" class="btn btn-sm btn-info">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-danger">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+   
+   </div>
+    <!-- <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
