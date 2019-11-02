@@ -32,11 +32,13 @@ public class WebMvcConfig implements WebMvcConfigurer{
         return templateResolver;
     }
 	
+	//1
 	@Bean
     public LayoutDialect layoutDialect() {
     	return new LayoutDialect();
     }
  
+	//2
     @Bean
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
@@ -45,6 +47,7 @@ public class WebMvcConfig implements WebMvcConfigurer{
         return templateEngine;
     }
  
+    //3
     @Bean
     public ViewResolver viewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
